@@ -16,8 +16,8 @@ const Card = (e) => {
         </p>
       </div>
     </>
-  );
+  ); 
 };
 
 
-export default Card
+export default Card;

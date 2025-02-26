@@ -1,4 +1,4 @@
-const Events = [
+ const Events = [
     {
         date: 9,
         suffix: 'th',
@@ -26,7 +26,8 @@ const Events = [
         location: 'Welcome Center',
         eventTitle: "Academic Seminar 2025"
     },
-]
+];
+
+export default Events;
 
 
-export default Events

@@ -1,18 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import Logo from "/Logo/logo.png";
-// import Logo2 from "/logo-black.svg";
-// import LogoMobile from "/logo_mobile.svg";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { CiCircleRemove } from "react-icons/ci";
 import { useLocation } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
-const NavBar = () => {
-  const nav = useRef("");
-  const navBar = useRef("");
-  const currentLocation = useLocation();
-  const [active, setActive] = useState("");
 
+function Navbar1() {
+    const nav = useRef("");
+    const navBar = useRef("");
+    const currentLocation = useLocation();
+    const [active, setActive] = useState("")
   // For The Scroll Effect
   useEffect(() => {
     setActive(currentLocation.pathname.split("/")[1]);
@@ -26,23 +23,22 @@ const NavBar = () => {
   const showNav = () => {
     navBar.current.style.display = "flex";
     navBar.current.style.position = "fixed";
-    
   };
   // Mobile SideNavigation
   const removeNav = () => {
     navBar.current.style.display = "none";
   };
 
-  return (
-    <div
-      className="fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full text-white "
-      ref={nav}
-    >
-      <a href="/">
-        <img src={Logo} alt="" className="lg:w-[50px] w-[40px] lg:flex" />
-      </a>
+  return ( 
+    <div className="fixed flex lg:items-center shadow-md  h-16 lg:justify-between lg:px-12 lg:py-[20px] p-[10px] z-1 w-full bg-white">
 
-      <ul
+
+        <a href="/">
+            <img  src={Logo} 
+                className="lg:w-[50px] w-[40px] lg:flex "            
+            />
+            </a>
+            <ul
         className={`lg:flex lg:flex-row font-grotesk lg:relative hidden top-0 lg:bg-transparent absolute left-0 lg:w-fit lg:h-fit h-[100lvh] z-30 w-full bg-[#101f82fe] space-x-0 lg:space-x-[50px] flex-col justify-center lg:divide-none divide-secondary divide-y-[1px] motion-preset-slide-left motion-duration-300`}
         ref={navBar}
       >
@@ -98,14 +94,6 @@ const NavBar = () => {
         >
           Feedbacks
         </a>
-        {/* <a
-          href="/payment"
-          className={`lg:px-0 px-4 lg:hover:bg-none ${active === 'about' ? '' : ''} lg:hover:text-secondary lg:hover:bg-transparent hover:bg-secondary lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
-          
-        >
-          
-          Payments
-        </a> */}
       </ul>
 
       <FaBarsStaggered
@@ -113,7 +101,6 @@ const NavBar = () => {
         onClick={showNav}
       />
     </div>
-  );
-};
-
-export default NavBar;
+  )
+}
+export default Navbar1
