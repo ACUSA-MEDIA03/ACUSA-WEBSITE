@@ -12,24 +12,30 @@ const AboutPage = () => {
 
   return (
     <>
+    {/* navbar */}
       <NavBar />
-      <div className="py-24 sm:py-32">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-[20px] lg:text-[42px] font-grotesk font-semibold leading-snug">
+      {/* navbar */}
+
+      <div className="lg:py-24 py-32">
+        {/* hero section */}
+        <div className="flex flex-col items-center justify-center">
+        <div className=" text-center">
+          <h2 className="text-[20px] lg:text-[42px] px-20 font-grotesk font-semibold leading-snug">
             There is More to the Ajayi Crowther University Student&quot;s Assembly than just simply paying the ACUSA fee.
           </h2>
         </div>
         <AboutGrid />
         <div className="bg-white ">
           {/* Description Section */}
-          <div className=" px-12 text-center mt-6">
-            <p className="font-grotesk leading-8 text-[14px] lg:text-[18px] text-gray-700 ">
+          <div className=" px-12 text-center ">
+            <p className="font-grotesk leading-8 text-[14px] lg:text-[24px] text-gray-700 text-start ">
               The Ajayi Crowther University Student&quot;s Assembly, ACUSA, is a student-led organization. ACUSA is committed to promoting the welfare, rights, and interests of all students at the university. As the liaison between the student body and the university administration, ACUSA ensures that students’ voices are heard, their issues are addressed, and their social and academic experiences are enhanced.
               <br />
               As a group founded on service, leadership, and accountability, ACUSA supports programs and policies that advance student growth, create a welcoming campus environment, and facilitate productive communication between students and school administrators.
             </p>
           </div>
-
+          </div>
+            {/* hero section */}
           {/* Mission, Vision, and Logo Section */}
           <div className=" mt-10 pt-24 pb-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-12 bg-gray-100">
             {/* Logo */}
@@ -39,28 +45,28 @@ const AboutPage = () => {
 
             {/* Mission */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-main text-[20px] lg:text-[32px] font-semibold">Our Mission</h4>
-              <p className="text-gray-600 text-base">
+              <h4 className="text-main text-[20px] lg:text-[36px] font-bold">Our Mission</h4>
+              <p className="text-gray-600 text-base text-[20px]">
                 ACUSA aims to foster leadership, accountability, and service while creating an inclusive campus culture. We advocate for student growth, enhance communication with the administration, and ensure the needs of students are met through engagement and representation.
               </p>
             </div>
 
             {/* Vision */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-main text-[20px] lg:text-[32px] font-semibold">Our Vision</h4>
-              <p className="text-gray-600 text-base">
+              <h4 className="text-main text-[20px] lg:text-[36px] font-bold">Our Vision</h4>
+              <p className="text-gray-600 text-base text-[20px]">
                 To be a leading student body that champions student interests, promotes academic excellence, and nurtures a vibrant university experience through effective governance and representation.
               </p>
             </div>
           </div>
 
-          <div className="bg-white h-full ">
-            <div className="flex mt-6 gap-4 mb-4 justify-center">
+          <div className="bg-white flex items-center justify-between flex-col gap-11 p-10 ">
+            <div className="flex  gap-6 justify-center">
               {["Executive", "Legislative", "Judiciary", "Appointee"].map((type) => (
                 <button
                   key={type}
                   onClick={() => setCategory(type)}
-                  className={`text-center text-base font-semibold font-rubik leading-6 
+                  className={`text-center text-[36px] text-base font-bold font-rubik leading-6 
                     ${category === type ? "text-main underline" : "text-[#C1B8B8]"}
                     hover:text-main transition-all`}>
                   {type}
