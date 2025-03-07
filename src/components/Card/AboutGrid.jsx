@@ -11,7 +11,7 @@ function AboutGrid() {
       
       
       
-    <div className="bg-[#0C1657] text-white p-6 rounded-xl flex items-center justify-center w-[424px]  h-[276px] " >Item 4</div>
+    <div id="item-4" className="bg-[#0C1657] text-white p-6 rounded-xl flex items-center justify-center w-[424px]  h-[276px] relative " >Item 4</div>
   
 
     <div className="bg-[#505786] text-white w-24 p-6 rounded-xl flex items-center justify-center lg:w-[223px] lg:h-[141px]" >Item 5</div>

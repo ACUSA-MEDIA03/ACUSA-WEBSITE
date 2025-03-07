@@ -35,7 +35,7 @@ const NavBar = () => {
 
   return (
     <div
-      className="fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full text-white "
+      className="fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full text-[#0C1657]"
       ref={nav}
     >
       <a href="/">

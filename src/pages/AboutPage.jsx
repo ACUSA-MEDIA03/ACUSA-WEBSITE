@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer';
 import AboutGrid from "../components/Card/AboutGrid";
 import Leaders from "../data/Leaders.js";
 
+
 const AboutPage = () => {
 
   const [category, setCategory] = useState("Executive");
@@ -29,7 +30,7 @@ const AboutPage = () => {
           {/* Description Section */}
           <div className=" px-12 text-center ">
             <p className="font-grotesk leading-8 text-[14px] lg:text-[24px] text-gray-700 text-start ">
-              The Ajayi Crowther University Student&quot;s Assembly, ACUSA, is a student-led organization. ACUSA is committed to promoting the welfare, rights, and interests of all students at the university. As the liaison between the student body and the university administration, ACUSA ensures that students’ voices are heard, their issues are addressed, and their social and academic experiences are enhanced.
+              The Ajayi Crowther University Student&apos;s Assembly, ACUSA, is a student-led organization. ACUSA is committed to promoting the welfare, rights, and interests of all students at the university. As the liaison between the student body and the university administration, ACUSA ensures that students’ voices are heard, their issues are addressed, and their social and academic experiences are enhanced.
               <br />
               As a group founded on service, leadership, and accountability, ACUSA supports programs and policies that advance student growth, create a welcoming campus environment, and facilitate productive communication between students and school administrators.
             </p>
@@ -74,7 +75,7 @@ const AboutPage = () => {
               ))}
             </div>
 
-            <div className="bg-main flex flex-col lg:flex-row gap-6 p-12">
+            <div className="bg-main flex flex-col w-[100vw] lg:flex-row gap-6 p-12">
               {/* Left Side */}
               <div className="lg:w-1/3 flex flex-col justify-center gap-4 text-white">
                 <hr className="border-white mx-auto w-1/2" />

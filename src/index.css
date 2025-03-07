@@ -329,3 +329,25 @@ svg#freepik_stories-a-whole-year.animated #freepik--Character--inject-296 {
     padding: 20px;
   }
 }
+
+/* mask */
+
+ #last-row-mask{
+ top: 540px;
+ } 
+ .gallery-mask {
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  position: relative;
+  mask-origin: content-box;
+  bottom: 115px;
+}
+#break{
+ top: 450px;
+}
+#footer{
+  top: 460px;
+}
+#item-4{
+  bottom: 135px;
+}
