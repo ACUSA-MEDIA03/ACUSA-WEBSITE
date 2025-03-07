@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar/NavBar";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Footer from '../components/Footer/Footer';
 
 
@@ -67,6 +68,8 @@ Highlighting ACUSA&apos;s Excellence</h2>
 
 export default GallerytPage;
 =======
+=======
+>>>>>>> Stashed changes
 // import Image from "image";
 const images = [
   "/images/image1.jpg",
@@ -110,4 +113,7 @@ const GallerytPage = () => {
 }
 
 export default GallerytPage
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
