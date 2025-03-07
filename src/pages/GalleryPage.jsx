@@ -1,4 +1,5 @@
 import NavBar from "../components/NavBar/NavBar";
+<<<<<<< Updated upstream
 import Footer from '../components/Footer/Footer';
 
 
@@ -65,3 +66,48 @@ Highlighting ACUSA&apos;s Excellence</h2>
 };
 
 export default GallerytPage;
+=======
+// import Image from "image";
+const images = [
+  "/images/image1.jpg",
+  "/images/image2.jpg",
+  "/images/image3.jpg",
+  "/images/image4.jpg",
+  "/images/image5.jpg",
+  "/images/image6.jpg",
+  "/images/image7.jpg"
+];
+
+
+const GallerytPage = () => {
+  return (
+   <>
+   <div className="bg-black ">
+   {/* NavBar */}
+   <NavBar /></div>
+
+      {/* NavBar */}
+    
+      <div className="max-w-6xl mx-auto p-4">
+      <div className="grid grid-cols-3 gap-2 md:gap-4 h-[200vh]">
+        <div className="col-span-3 grid grid-cols-3 gap-2 md:gap-4">
+          <img src={images[3]} alt="" className="w-full h-32 md:h-48 object-cover rounded-lg" />
+          <img src={images[4]} alt="" className="w-full h-32 md:h-48 object-cover rounded-lg" />
+        </div>
+        
+        <div className="col-span-3">
+          <img src={images[6]} alt="" className="w-full h-48 md:h-64 object-cover rounded-lg" />
+        </div>
+        <div className="col-span-3 grid grid-cols-3 gap-2 md:gap-4">
+          <img src={images[3]} alt="" className="w-full h-32 md:h-48 object-cover rounded-lg" />
+          <img src={images[4]} alt="" className="w-full h-32 md:h-48 object-cover rounded-lg" />
+        </div>
+      </div>
+    </div>
+      </>
+
+  )
+}
+
+export default GallerytPage
+>>>>>>> Stashed changes
