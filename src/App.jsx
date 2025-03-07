@@ -14,18 +14,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage/>} />
-
           <Route path="/about" element={<AboutPage />}/>
           <Route path="/gallery" element={<GalleryPage/>} />
-          
-
-
           <Route path="/gallery" element={<GalleryPage/>} />
-
-
           <Route path="/gallery" element={<GalleryPage/>} />
-          
-
         </Routes>
       </Router>
     </>
