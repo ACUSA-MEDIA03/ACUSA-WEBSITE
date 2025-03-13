@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Sora:wght@100..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
 
@@ -6,12 +6,16 @@
   /* Colors */
   --color-main: #101f82ef;
   --color-main-yellow: #fcc43e;
+  --color-paragraph: #808080;
   /* Colors */
 
   /*  */
   --font-rubik: Rubik;
   --font-rubik-dirt: Rubik Dirt;
   --font-grotesk: Space Grotesk;
+  --font-inter: Inter;
+  --font-mont: Montserrat;
+  --font-sora: Sora;
 }
 
 * {
@@ -25,7 +29,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #fdfdfd80;
+  background: #101f82ef;
   z-index: 20;
   /* padding: 130px; */
   /* display: hidden; */
@@ -58,7 +62,6 @@
   backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
   border: 1px solid rgba(249, 249, 249, 0.548);
-
 }
 /* Additional Styling */
 
