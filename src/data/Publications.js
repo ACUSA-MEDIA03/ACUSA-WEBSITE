@@ -31,7 +31,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 12,
@@ -39,7 +39,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-     //    image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+     //    image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 13,
@@ -47,7 +47,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 14,
@@ -55,7 +55,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 15,
@@ -63,7 +63,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-     //    image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+     //    image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 16,
@@ -71,7 +71,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
     ],
   },
@@ -81,27 +81,30 @@ const Publications = [
     publications: [
       {
         id: 21,
-        header: "Article 2",
-        date: "Thurs, 13th Feb 2025",
+        header: "Newsletter Edition 2 - February 2025",
+        date: "Sunday, 1st of March, 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "/public/Gallery/newsletter.png",
+        author: 'OFFICE OF THE ACUSA P.R.O 2024/2025'
       },
       {
         id: 22,
         header: "Article 22",
         date: "Thurs, 13th Feb 2025",
         description:
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        author: 'OFFICE OF THE ACUSA P.R.O 2024/2025'
       },
       {
         id: 23,
         header: "Article 31",
         date: "Thurs, 13th Feb 2025",
         description:
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        author: 'OFFICE OF THE ACUSA P.R.O 2024/2025'
       },
     ],
   },
@@ -115,7 +118,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 22,
@@ -123,7 +126,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 23,
@@ -131,7 +134,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
     ],
   },
@@ -145,7 +148,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 22,
@@ -153,7 +156,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
       {
         id: 23,
@@ -161,7 +164,7 @@ const Publications = [
         date: "Thurs, 13th Feb 2025",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://www.shutterstock.com/image-vector/trendy-halftone-collage-online-education-concept-2493344853",
+        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       },
     ],
   },

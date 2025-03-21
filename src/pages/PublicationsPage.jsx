@@ -4,13 +4,14 @@ import { Categories, Publications } from "../data/Publications";
 import PublicationCard from "../components/Card/PublicationCard";
 import PaginatedItems from "../utils/pagination";
 import { Items } from "../utils/pagination";
+import PodcastCard from "../components/Card/PodcastCard";
 
 const PublicationPage = () => {
   const [category, setCatgory] = useState("Articles");
   const publication = Publications.filter(
     (publications) => category == publications.category
   );
-  console.log(typeof publication[0].category, typeof category);
+  console.log(category);
 
   //   useState(()=>{
   const publications = publication.map((item) => item.publications)[0];
@@ -43,8 +44,7 @@ const PublicationPage = () => {
         </div>
 
         <div className="basis-[80%] bg-[#F0EAEA]">
-            {/* <Items currentItems={publications} /> */}
-            <PaginatedItems itemsPerPage={3} currentItems={publications} />
+            <PaginatedItems itemsPerPage={3} currentItems={publications} category={category} />
         </div>
       </div>
       {/* Second Section */}

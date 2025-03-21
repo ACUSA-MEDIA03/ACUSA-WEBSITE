@@ -36,7 +36,7 @@ function PaginatedItems({ itemsPerPage, currentItems }) {
 
   return (
     <>
-      <div className="space-y-4 flex flex-col items-center px-[50px] py-[50px] h-[500px] overflow-auto no-scrollbar divide-y">
+      <div className="flex flex-col items-center px-[50px] py-[50px] h-[500px] overflow-auto no-scrollbar divide-y ">
         <Items currentItems={currentItem} />
       </div>
       <ReactPaginate
