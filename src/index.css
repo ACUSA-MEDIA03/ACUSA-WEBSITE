@@ -62,7 +62,6 @@
   backdrop-filter: blur(3.3px);
   -webkit-backdrop-filter: blur(3.3px);
   border: 1px solid rgba(249, 249, 249, 0.548);
-
 }
 /* Additional Styling */
 
@@ -99,6 +98,13 @@
 }
 /* About us */
 
+<<<<<<< HEAD
+=======
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+>>>>>>> be0748b4348e54e3c71d7960eeb680809a23f4b7
 
 /* Responsive */
 @media (max-width: 760px) {

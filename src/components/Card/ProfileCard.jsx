@@ -2,7 +2,7 @@ const ProfileCard = (e) => {
   return (
     <>
       <div
-        className="rounded-tr-[20px] rounded-bl-[20px] relative lg:h-[400px] h-[470px]  justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
+        className="rounded-tr-[20px] rounded-bl-[20px] flex relative lg:h-[450px] h-[420px] items-end justify-center p-2 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${e.image})` }}
       >
         <div className="top-0 left-0 absolute h-full w-full p-2 flex items-end" style={{ background: `rgba(0,0,0,0.3)` }}>
