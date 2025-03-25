@@ -35,7 +35,7 @@ const NavBar = () => {
   console.log(active)
   return (
     <div
-      className={`fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full ${active === "" ? 'text-[#fff]' : ''}`}
+      className={`fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full ${active === "" ? 'text-[#fff]' : 'bg-white'}`}
       ref={nav}
     >
       <a href="/">

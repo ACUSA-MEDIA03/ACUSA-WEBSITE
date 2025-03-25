@@ -5,24 +5,27 @@ const Details = (letter) => {
   return (
     <div className="p-[30px] space-y-9">
       {/*  */}
-        {/* Top */}
-        <div className="flex justify-between items-center ">
-          <Link
-            to={`/publication`}
-            className="flex items-center px-[20px] py-[5px] gap-2 text-white bg-[#0C1657] rounded-[5px]"
-          >
-            <BiArrowBack /> Back
-          </Link>
-        </div>
-        {/* Top */}
-        
+      {/* Top */}
+      <div className="flex justify-between items-center ">
+        <Link
+          to={`/publication`}
+          className="flex items-center px-[20px] py-[5px] gap-2 text-white bg-[#0C1657] rounded-[5px]"
+        >
+          <BiArrowBack /> Back
+        </Link>
+      </div>
+      {/* Top */}
+
       {/*  */}
 
       {/*  */}
       <div className="space-y-3">
-        <h2 className="font-rubik font-extrabold text-[30px] text-center">
-          APPOINTMENT AS ATTORNEY GENERAL OF ACUSA
-        </h2>
+        <div className="flex items-center justify-center flex-col">
+          <h2 className="font-rubik font-extrabold text-[30px] ">
+            APPOINTMENT AS ATTORNEY GENERAL OF ACUSA
+          </h2>
+          <p className="text-red-500 font-grotesk font-[600]">Written By: </p>
+        </div>
 
         <div className="font-grotesk leading-[30px] space-y-4">
           <p>
@@ -82,7 +85,6 @@ const Details = (letter) => {
         </div>
       </div>
       {/*  */}
-
     </div>
   );
 };

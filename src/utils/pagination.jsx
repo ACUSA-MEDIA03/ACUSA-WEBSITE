@@ -20,6 +20,7 @@ function Items({ currentItems, category }) {
                   date={item.date}
                   description={item.description}
                   image={item.image}
+                  author={item.author}
                 />
               </Link>
             )}
@@ -34,16 +35,20 @@ function PaginatedItems({ itemsPerPage, currentItems, category }) {
   const endOffset = itemOffset + itemsPerPage;
   const currentItem = currentItems.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(currentItems.length / itemsPerPage);
-  console.log(currentItems, currentItem, pageCount);
-
+  if(currentItem.length <= 0){
+    setItemOffset(0)
+    console.log(pageCount)
+  }
+  
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % currentItems.length;
+    console.log(pageCount)
     setItemOffset(newOffset);
   };
 
   return (
     <>
-      <div className="flex flex-col items-center px-[50px] py-[50px] h-[500px] overflow-auto no-scrollbar divide-y divide-yellow-950 ">
+      <div className="flex flex-col items-center lg:px-[50px] px-2 py-[50px] h-[500px] overflow-auto no-scrollbar divide-y divide-yellow-950 ">
         <Items currentItems={currentItem} category={category} />
       </div>
       <ReactPaginate

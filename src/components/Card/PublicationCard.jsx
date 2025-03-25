@@ -2,7 +2,7 @@ const PublicationCard = (e) => {
   return (
     <>
       {/* Card */}
-      <div className="basis-[90%] flex items-center border-b border-red-500 ">
+      <div className="basis-[90%] flex lg:flex-row flex-col items-center border-b border-red-500 ">
         {e.image ? 
         <div className="basis-[40%]  flex items-center justify-center h-fit">
           <img src={e.image} alt="" className="object-contain h-[320px] w-full " />
@@ -17,7 +17,7 @@ const PublicationCard = (e) => {
               {e.header}
             </h1>
             <p className="font-grotesk tracking-[0.32px] text-[13px] text-red-500">
-              {e.date}
+              {e.date} || {e.author}
             </p>
           </div>
           {/* Heading */}

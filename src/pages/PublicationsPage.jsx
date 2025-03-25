@@ -1,9 +1,8 @@
 import { useState } from "react";
 import NavBar from "../components/NavBar/NavBar";
 import { Categories, Publications } from "../data/Publications";
-import PublicationCard from "../components/Card/PublicationCard";
 import PaginatedItems from "../utils/pagination";
-import { Items } from "../utils/pagination";
+import Banner from "../components/Banner/Banner";
 
 
 const PublicationPage = () => {
@@ -11,30 +10,23 @@ const PublicationPage = () => {
   const publication = Publications.filter(
     (publications) => category == publications.category
   );
-  console.log(category);
-
-  //   useState(()=>{
   const publications = publication.map((item) => item.publications)[0];
-  //   }, [category])
 
   return (
     <>
       <NavBar />
 
       {/* TopNav */}
-      <div className="px-[90px] h-[37lvh] py-[25px] bg-[#0C1657] flex items-start justify-end flex-col text-white">
-        <h2 className="font-rubik font-bold text-[40px]">Publications</h2>
-        <p className="font-grotesk tracking-[0.9px]">News & Articles || Everything from articles to letters. All that you <br /> need to know happening around the ACU Space.</p>
-      </div>
+      <Banner header="Publications" description="News & Articles || Everything from articles to letters. All that you need to know happening around the ACU Space." image='../Banner/banner.jpg' />
       {/* TopNav */}
 
       {/* Second Section */}
-      <div className="flex bg-white">
-        <div className="basis-[20%] flex flex-col  py-[70px] px-[40px] space-y-9 font-rubik divide-y">
+      <div className="flex lg:flex-row flex-col bg-white">
+        <div className="basis-[20%] flex lg:flex-col lg:py-[70px] lg:px-4 lg:justify-start lg:items-stretch items-center justify-center py-[30px] lg:space-y-9 lg:gap-0 gap-4 font-rubik">
           {Categories.map((categories) => (
             <button
               key={categories.id}
-              className={`pb-3 text-left pl-2 cursor-pointer ${
+              className={`lg:pb-3 lg:border-b  border-r border-l lg:border-r-0 lg:border-l-0 px-1 text-left lg:pl-2 cursor-pointer lg:text-[16px] text-[14px] ${
                 categories.category == publication[0].category
                   ? "text-main"
                   : ""

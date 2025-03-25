@@ -15,9 +15,6 @@ const Categories = [
     id: 4,
     category: "Podcasts",
   },
-  {
-    id: 5,
-  },
 ];
 
 const Publications = [
@@ -29,6 +26,7 @@ const Publications = [
         id: 11,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -37,6 +35,7 @@ const Publications = [
         id: 12,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
      //    image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -45,6 +44,7 @@ const Publications = [
         id: 13,
         header: "Article 31",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -53,6 +53,7 @@ const Publications = [
         id: 14,
         header: "Article 51",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -61,6 +62,7 @@ const Publications = [
         id: 15,
         header: "Article 61",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
      //    image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -69,6 +71,7 @@ const Publications = [
         id: 16,
         header: "Article 71",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -92,10 +95,10 @@ const Publications = [
         id: 22,
         header: "Article 22",
         date: "Thurs, 13th Feb 2025",
+        author: 'OFFICE OF THE ACUSA P.R.O 2024/2025',
         description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        author: 'OFFICE OF THE ACUSA P.R.O 2024/2025'
       },
     ],
   },
@@ -107,6 +110,7 @@ const Publications = [
         id: 21,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -115,6 +119,7 @@ const Publications = [
         id: 22,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -123,6 +128,7 @@ const Publications = [
         id: 23,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -137,6 +143,7 @@ const Publications = [
         id: 21,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -145,6 +152,7 @@ const Publications = [
         id: 22,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -153,6 +161,7 @@ const Publications = [
         id: 23,
         header: "Article 1",
         date: "Thurs, 13th Feb 2025",
+        author: "ACUSA Media Writers",
         description:
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
