@@ -6,8 +6,8 @@ const ProfileCard = (e) => {
         style={{ backgroundImage: `url(${e.image})` }}
       >
         <div className="top-0 left-0 absolute h-full w-full p-2 flex items-end" style={{ background: `rgba(0,0,0,0.3)` }}>
-          <div className="border border-white w-full  py-[15px] px-[16px] glassmorphism_white rounded-bl-[13px] rounded-tr-[13px] bottom-0 ">
-            <b className="font-rubik text-main text-[20px]">{e.name}</b>
+          <div className="border flex items-center flex-col border-white w-full  py-[15px] px-[16px] glassmorphism_white rounded-bl-[13px] rounded-tr-[13px] bottom-0 ">
+            <b className="font-rubik text-black text-[20px]">{e.name}</b>
             <p className="font-grotesk text-[red] text-[15px]">{e.position}</p>
           </div>
         </div>
