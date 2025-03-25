@@ -1,28 +1,35 @@
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import PublicationCard from "../components/Card/PublicationCard";
-import {  } from "react-icons/bs";
+import PodcastCard from "../components/Card/PodcastCard";
+import { Link } from "react-router-dom";
 
-function Items({ currentItems }) {
+function Items({ currentItems, category }) {
   return (
-    <>
+    <div className=" w-full space-y-4 flex flex-col justify-center items-center">
       {currentItems &&
         currentItems.map((item, index) => (
           <>
-            <PublicationCard
-              key={index}
-              header={item.header}
-              date={item.date}
-              description={item.description}
-              image={item.image}
-            />
+            {category == "Podcasts" ? (
+              <PodcastCard />
+            ) : (
+              <Link to={`/publication/${category}/${item.id}`}>
+                <PublicationCard
+                  key={index}
+                  header={item.header}
+                  date={item.date}
+                  description={item.description}
+                  image={item.image}
+                />
+              </Link>
+            )}
           </>
         ))}
-    </>
+    </div>
   );
 }
 
-function PaginatedItems({ itemsPerPage, currentItems }) {
+function PaginatedItems({ itemsPerPage, currentItems, category }) {
   const [itemOffset, setItemOffset] = useState(0);
   const endOffset = itemOffset + itemsPerPage;
   const currentItem = currentItems.slice(itemOffset, endOffset);
@@ -36,8 +43,8 @@ function PaginatedItems({ itemsPerPage, currentItems }) {
 
   return (
     <>
-      <div className="flex flex-col items-center px-[50px] py-[50px] h-[500px] overflow-auto no-scrollbar divide-y ">
-        <Items currentItems={currentItem} />
+      <div className="flex flex-col items-center px-[50px] py-[50px] h-[500px] overflow-auto no-scrollbar divide-y divide-yellow-950 ">
+        <Items currentItems={currentItem} category={category} />
       </div>
       <ReactPaginate
         breakLabel="..."
@@ -45,11 +52,15 @@ function PaginatedItems({ itemsPerPage, currentItems }) {
         onPageChange={handlePageClick}
         pageRangeDisplayed={5}
         pageCount={pageCount}
-        previousLabel={'Previous'}
-        renderOnZeroPageCount={null}
-        className="flex gap-4 cursor-pointer px-13 py-4"
-        activeClassName="border"
-        previousClassName="border border-red-500"
+        previousLabel="< Previous"
+        containerClassName="flex items-center px-15 gap-4 py-5 font-grotesk text-[14px]"
+        pageClassName="flex items-center justify-center h-[25px] w-[25px] rounded-full"
+        pageLinkClassName="w-full h-full flex items-center border rounded-full justify-center cursor-pointer bg-[whitesmoke]"
+        activeClassName="text-[#0C1657]"
+        previousClassName="flex items-center justify-center rounded-md cursor-pointer"
+        nextClassName="flex items-center justify-center rounded-md cursor-pointer"
+        disabledClassName="opacity-50 cursor-not-allowed"
+        activeLinkClassName="font-bold"
       />
     </>
   );

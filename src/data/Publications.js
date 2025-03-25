@@ -97,15 +97,6 @@ const Publications = [
         image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         author: 'OFFICE OF THE ACUSA P.R.O 2024/2025'
       },
-      {
-        id: 23,
-        header: "Article 31",
-        date: "Thurs, 13th Feb 2025",
-        description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores voluptates dolor? Eius, odio. Quam neque odio totam reiciendis, ducimus perferendis quis libero autem dolor voluptates fuga voluptatem, ratione nam deserunt repellendus maiores rerum! Libero perspiciatis eos laudantium hic error!",
-        image: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        author: 'OFFICE OF THE ACUSA P.R.O 2024/2025'
-      },
     ],
   },
   {

@@ -2,10 +2,10 @@ const PublicationCard = (e) => {
   return (
     <>
       {/* Card */}
-      <div className="basis-[90%] flex items-center py-9">
+      <div className="basis-[90%] flex items-center border-b border-red-500 ">
         {e.image ? 
         <div className="basis-[40%]  flex items-center justify-center h-fit">
-          <img src={e.image} alt="" className="object-contain h-[320px] w-full border" />
+          <img src={e.image} alt="" className="object-contain h-[320px] w-full " />
         </div>
           :
           ''
