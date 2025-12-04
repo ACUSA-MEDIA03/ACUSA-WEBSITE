@@ -35,7 +35,7 @@ const AboutPage = () => {
             {/* Logo */}
             <div className="flex justify-center items-center">
               <img src={Logo} alt="ACUSA Logo" className="w-64 h-64 object-contain" />
-            </div>
+            </div>/
 
             {/* Mission */}
             <div className="bg-white p-6 rounded-lg shadow-md">
