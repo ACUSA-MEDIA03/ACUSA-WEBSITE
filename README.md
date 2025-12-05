@@ -1,5 +1,5 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](./public//Logo/logo.png)
 
 
 #   ACUSA 
@@ -12,14 +12,11 @@
  - [Ajayi Crowther University, Oyo Oyo State ](acu.edu.ng)
  
 
+## Authors - Contributors
 
-## Authors
-
-- [@octokatherine](https://www.github.com/octokatherine)
-- [@octokatherine](https://www.github.com/octokatherine)
-- [@octokatherine](https://www.github.com/octokatherine)
-- [@octokatherine](https://www.github.com/octokatherine)
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@ifeoluwa02](https://www.github.com/ifeoluwa02)
+- [@Timmy-Tee](https://www.github.com/Timmy-Tee)
+- [@theNubiadev](https://www.github.com/theNubiadev)
 
 ## Color Reference
 
