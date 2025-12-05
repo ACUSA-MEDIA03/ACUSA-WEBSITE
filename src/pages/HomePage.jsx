@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar/NavBar";
 import BannerImg from "/Banner/banner.jpg";
 
-import Events from "../data/Events";
+import Events from "../data/Events.js";
 import President from "/Executives/President.jpg"
 import VicePresident from "/Executives/Vice_President.jpg"
 

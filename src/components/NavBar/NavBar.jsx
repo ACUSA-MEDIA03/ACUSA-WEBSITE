@@ -35,8 +35,8 @@ const NavBar = () => {
   console.log(active)
   return (
     <div
-      className={`fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full ${active === "" ? 'text-[#fff]' : 'bg-white'}`}
-      ref={nav}
+      className={`fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full ${active === "" ? 'text-[#fff]' : ''}`}
+     
     >
       <a href="/">
         <img src={Logo} alt="" className="lg:w-[50px] w-[40px] lg:flex" />
