@@ -19,7 +19,6 @@ const HomePage = () => {
     <>
       {/* NavBar */}
       <NavBar />
-      {/* NavBar */}
 
       {/* Banner */}
       <div
@@ -52,7 +51,6 @@ const HomePage = () => {
           <b className="font-rubik lg:text-[56px] text-[40px]">
             What We Are All About?
           </b>
-
           <p
             className="font-grotesk leading-8 text-[14px]"
             style={{ whiteSpace: "pre-wrap" }}
