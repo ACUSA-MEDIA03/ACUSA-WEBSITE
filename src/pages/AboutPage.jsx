@@ -1,109 +1,192 @@
 import { useState } from "react";
 import Logo from "/Logo/logo.png";
 import NavBar from "../components/NavBar/NavBar";
-import Footer from '../components/Footer/Footer';
-import AboutGrid from "../components/Card/AboutGrid";
-import Leaders from "../data/Leaders.js";
+import Footer from "../components/Footer/Footer";
+// import AboutGrid from "../components/Card/AboutGrid";
+import { Leaders, Team } from "../data/Leaders.js";
+// import Media from "../data/Team.js";
+import MissVisionCard from "../components/Card/MissVisionCard.jsx";
+import { MissVision } from "../data/AboutUs.js";
+import ProfileCard from "../components/Card/AboutProfileCard.jsx";
+import Banner from "../components/Banner/all.jpg"
 
 const AboutPage = () => {
-
   const [category, setCategory] = useState("Executive");
   const filteredLeaders = Leaders.filter((leader) => leader.tag === category);
+  const filteredTeam = Team;
+  // const filteredTeam = Team.filter((team) => team.tag === category);
+
 
   return (
-    <>
-      <NavBar />
-      <div className="py-24 sm:py-32">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-[20px] lg:text-[42px] font-grotesk font-semibold leading-snug">
-            There is More to the Ajayi Crowther University Student&quot;s Assembly than just simply paying the ACUSA fee.
-          </h2>
-        </div>
-        <AboutGrid />
-        <div className="bg-white ">
-          {/* Description Section */}
-          <div className=" px-12 text-center mt-6">
-            <p className="font-grotesk leading-8 text-[14px] lg:text-[18px] text-gray-700 ">
-              The Ajayi Crowther University Student&quot;s Assembly, ACUSA, is a student-led organization. ACUSA is committed to promoting the welfare, rights, and interests of all students at the university. As the liaison between the student body and the university administration, ACUSA ensures that students’ voices are heard, their issues are addressed, and their social and academic experiences are enhanced.
-              <br />
-              As a group founded on service, leadership, and accountability, ACUSA supports programs and policies that advance student growth, create a welcoming campus environment, and facilitate productive communication between students and school administrators.
-            </p>
-          </div>
-
-          {/* Mission, Vision, and Logo Section */}
-          <div className=" mt-10 pt-24 pb-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-12 bg-gray-100">
-            {/* Logo */}
-            <div className="flex justify-center items-center">
-              <img src={Logo} alt="ACUSA Logo" className="w-64 h-64 object-contain" />
-            </div>/
-
-            {/* Mission */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-main text-[20px] lg:text-[32px] font-semibold">Our Mission</h4>
-              <p className="text-gray-600 text-base">
-                ACUSA aims to foster leadership, accountability, and service while creating an inclusive campus culture. We advocate for student growth, enhance communication with the administration, and ensure the needs of students are met through engagement and representation.
-              </p>
-            </div>
-
-            {/* Vision */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-main text-[20px] lg:text-[32px] font-semibold">Our Vision</h4>
-              <p className="text-gray-600 text-base">
-                To be a leading student body that champions student interests, promotes academic excellence, and nurtures a vibrant university experience through effective governance and representation.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white h-full ">
-            <div className="flex mt-6 gap-4 mb-4 justify-center">
-              {["Executive", "Legislative", "Judiciary", "Appointee"].map((type) => (
-                <button
-                  key={type}
-                  onClick={() => setCategory(type)}
-                  className={`text-center text-base font-semibold font-rubik leading-6 
-                    ${category === type ? "text-main underline" : "text-[#C1B8B8]"}
-                    hover:text-main transition-all`}>
-                  {type}
-                </button>
-              ))}
-            </div>
-
-            <div className="bg-main flex flex-col lg:flex-row gap-6 p-12">
-              {/* Left Side */}
-              <div className="lg:w-1/3 flex flex-col justify-center gap-4 text-white">
-                <hr className="border-white mx-auto w-1/2" />
-                <p className="font-rubik leading-[42px] max-w-lg text-center sm:text-4xl text-xl font-semibold tracking-tight text-balance">
-                  &quot; These are our {category}, where leadership meets vision and passion
-                  drives innovation. We proudly introduce you to the dedicated
-                  individuals who steer the course of ACUSA and its organs towards
-                  excellence. &quot;
-                </p>
-                <hr className="border-white mx-auto w-1/2" />
-              </div>
-
-              {/* Right Side - Grid of Executives */}
-              <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {filteredLeaders.length > 0 ? (
-                  filteredLeaders.map((leader, index) => (
-                    <div key={index} className="flex flex-col items-center">
-                      <img src={leader.image} alt={leader.name} className="w-full h-36 object-cover bg-gray-200" />
-                      <div className="bg-white text-center px-2 py-2 shadow-md w-full">
-                        <h5 className="font-semibold">{leader.name}</h5>
-                        <p className="text-[12px] text-[#CC0D0D]">{leader.position}</p>
-                      </div>
-                    </div>
-                  ))
-                ) : (
-                  <p className="text-white text-center w-full">No {category}s available.</p>
-                )}
-              </div>
-            </div>
+    <div className="">
+      {/* navbar */}
+      <NavBar className="fixed pb-2" />
+      {/* navbar */}
+      {/* HERO SECTION */}
+      <div className="h-[50vh] grid bg-no-repeat bg-cover bg-center "
+        style={{ backgroundImage: `url(${Banner})` }}>
+        <div className=" flex justify-center flex-col lg:px-[70px] px-[20px] py-[120px] text-white ">
+          <div className="lg:space-y-6 space-y-4 ">
+            <h2 className="font-grotesk lg:text-[55px] text-[15px] ">About Us</h2>
+            <p>Learn all there is to learn about the Ajayi Crowther University Student&apos; Assembly</p>
           </div>
         </div>
       </div>
+
+      {/* Leaarn about Acusa */}
+      <div className="flex flex-col p-[20px] lg:p-[40px]">
+        {/* learn about acusa text1 */}
+        <div className="flex flex-col items-start text-left px-6 py-12 ">
+          <p className="text-[8px] lg:text-[20px] text-start">Learn about ACUSA</p>
+          <p className="font-extrabold text-[14px] lg:text-[36px] font-rubik lg:text-start text-center">There is more to the Ajayi Crowther University Students Assembly than just simply paying the ACUSA fee.</p>
+        </div>
+        {/* learn about acusa text1 */}
+
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
+
+          {/* Image Grid */}
+          <div className="grid grid-cols-4 grid-rows-2 gap-[10px] lg:gap-[20px] w-full  ">
+            {/* <div className="col-span-2"> */}
+            <img src="/About/Frame 270.png" alt="Students in a lecture hall" className="col-span-3 " />
+            <img src="/About/Frame 272.png" alt="Students in a lecture hall" className=" border object-bottom lg:mt-[95px]" />
+            {/* </div> */}
+            <img src="/About/Frame 273.png" alt="Students in a lecture hall" className=" col-span-1" />
+            <img src="/About/Frame 271.png" alt="Students in discussion" className=" col-span-3" />
+
+
+          </div>
+
+          {/* Text Content */}
+          <div className="w-full  font-rubik  ">
+            <p className="font-grotesk text-[16px] lg:text-[32px] text-center lg:text-start   font-medium">
+              ACUSA is a student-led organization, the Ajayi Crowther University Student Assembly (ACUSA) is committed to promoting the welfare, rights, and interests of all students at the university.
+            </p>
+            <br />
+            <p className="text-[12px] lg:text-[26px] text-center lg:text-start text-[#363636] ">
+              As the liaison between the student body and the university administration, ACUSA, which is made up of chosen student officials, makes sure that students’ opinions are heard, their issues are taken care of, and their social and academic experiences are enhanced.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Leaarn about Acusa  */}
+
+      {/* Mission, Vision, and Logo Section */}
+      <div className=" px-[15px] py-[15px] lg:px-[20px] lg:py-[90px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  bg-gray-100">
+        {/* Logo */}
+        <div className="flex justify-center items-center">
+          <img
+            src={Logo}
+            alt="ACUSA Logo"
+            className="w-64 h-64 object-contain"
+          />
+        </div>
+
+        {/* Mission And VIsion */}
+        {MissVision.map((detail) => (
+          <MissVisionCard
+            key={detail.id}
+            header={detail.header}
+            description={detail.description}
+          />
+        ))}
+        {/* Mission And VIsion */}
+      </div>
+
+      <section className="flex flex-col md:flex-row items-center lg:gap-8 gap-4 lg:relative text-white">
+        {/* Text Content */}
+        <div className=" bg-main py-[25px] lg:py-[40px] lg:w-[80vw] lg:h-[65vh] h-[52vh]">
+          <p className="text-lg font-medium font-grotesk text-[16px] lg:text-[32px] lg:px-[40px] px-[15px] lg:text-start lg:w-[63vw] text-center">
+            As a group founded on service, leadership,  and accountability,  <span className="font-bold">ACUSA</span> supports programs and policies that advance student growth, create a welcoming campus  environment, and facilitate productive  communication between students and school administrators.
+          </p>
+          <br />
+          <p className="font-grotesk font-light text-center lg:text-start text-[12px] lg:text-[26px] px-[15px] lg:px-[40px] lg:w-[62vw]">
+            ACUSA makes sure that the needs of the student  body as a whole are satisfied through representation,  engagement, and calculated action.
+          </p>
+        </div>
+
+        {/* Image */}
+        <div className=" px-[30px] lg:pr-[40px] relative bottom-[120px] lg:bottom-[50px] lg:absolute lg:left-[850px] ">
+          <img src="/About/Frame 275.png" alt="Students in a lecture hall" className=" relative lg:h-[53vh] " />
+        </div>
+      </section>
+
+      <div className="flex justify-between flex-col gap-3  bg-[#EAEAEA] p-[15px] lg:p-[40px]">
+        <div className="flex flex-col items-center justify-center text-center ">
+          <h1 className="font-bold text-[17px] lg:text-[32px] font-rubik">Meet the ACUSA Leadership:
+            <br />
+            Executives, Legislatives, Judiciary, and Appointees</h1>
+          <br />
+          <p className=" text-[12px] lg:text-[24px] font-grotesk">Meet the dedicated individuals driving our vision forward. From the Executives to the Senate, Judiciary, and Executive Appointees, each member plays a vital role in governance, decision-making, and upholding the values of our community</p>
+        </div>
+        <div className="flex items-center place-content-center lg:gap-6 gap-4 p-2 ">
+          {["Executive", "Legislative", "Judiciary", "Appointee"].map(
+            (type) => (
+              <button
+                key={type}
+                onClick={() => setCategory(type)}
+                className={`text-center lg:text-[18px] text-[10px] cursor-pointer  font-grotesk 
+                    ${category === type ? "bg-main text-white" : "text-black"}
+                    hover:bg-main transition-all bg-[#C4C4C4] px-3 lg:px-6 py-2 rounded-[6px] text-center`}
+              >
+                {type}
+              </button>
+            )
+          )}
+        </div>
+
+        <div className=" border border-[#c5c1c143] grid  grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 gap-2  ">
+          {filteredLeaders.length <= 0 ?
+            <p className="text-red-500 text-center w-full col-span-3 h-fit font-grotesk text-[20px]">
+              No {category}s available.
+            </p>
+            : (
+              filteredLeaders.map((leader, index) => (
+                <ProfileCard
+                  key={index}
+                  name={leader.name}
+                  position={leader.position}
+                  image={leader.image}
+                />
+              ))
+            )}
+        </div>
+      </div>
+
+
+      {/* About Acusa media */}
+      <div className=" flex flex-col items-center justify-start">
+        <div className="flex flex-col items-center justify-center text-center p-[15px] lg:p-[40px]">
+          <h1 className="font-rubik text-[16px] lg:text-[36px] font-bold ">About ACUSA Media</h1>
+          <p className="text-[12px] lg:text-[24px] font-grotesk">ACUSA Media is the official media body for the Ajayi Crowther University Student’s Assembly. It has the responsibility of providing full media activities for ACUSA. ACUSA Media is responsible for supporting ACUSA with its core responsibility; giving voice to the students and being an ear to the management.
+            The ACUSA Media is therefore split into various teams that help achieve this goal. These teams are headed by the best individuals in their respective fields. They are: </p>
+        </div>
+        <div className=" border border-[#c5c1c143] grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full no-scrollbar overflow-x-scroll  ">
+          {filteredTeam.length <= 0 ?
+            <p className="text-red-500 text-center w-full col-span-3 h-fit font-grotesk text-[20px]">
+              No {category}s available.
+            </p>
+            : (
+              filteredTeam.map((team, index) => (
+                <ProfileCard
+                  key={index}
+                  name={team.name}
+                  position={team.position}
+                  image={team.image}
+
+                />
+              ))
+            )}
+        </div>
+      </div>
+
+      {/* About Acusa media */}
+      {/* </div> */}
+
       <Footer />
-    </>
-  )
-}
+    </div>
+  );
+};
 
 export default AboutPage;

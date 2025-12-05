@@ -21,7 +21,7 @@ const NavBar = () => {
         nav.current.classList.toggle("scrollNav", window.scrollY > 40);
       });
     }
-  }, []);
+  }, [currentLocation.pathname]);
   // Mobile SideNavigation
   const showNav = () => {
     navBar.current.style.display = "flex";
@@ -32,11 +32,11 @@ const NavBar = () => {
   const removeNav = () => {
     navBar.current.style.display = "none";
   };
-
+  console.log(active)
   return (
     <div
-      className="fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full text-white "
-      ref={nav}
+      className={`fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full ${active === "" ? 'text-[#fff]' : ''}`}
+     
     >
       <a href="/">
         <img src={Logo} alt="" className="lg:w-[50px] w-[40px] lg:flex" />
@@ -53,7 +53,7 @@ const NavBar = () => {
         <a
           href="/"
           className={`lg:px-0 px-4 lg:hover:bg-none ${
-            active === ""
+            active == ""
               ? "active text-main-yellow font-[500] hover:bg-secondary lg:bg-transparent lg:text-secondary bg-secondary"
               : ""
           } lg:hover:text-secondary lg:hover:bg-transparent hover:bg-secondary lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
@@ -63,8 +63,8 @@ const NavBar = () => {
         <a
           href="/about"
           className={`lg:px-0 px-4 lg:hover:bg-none ${
-            active === "about"
-              ? "active hover:text-main-yellow hover:bg-white lg:bg-transparent lg:text-secondary bg-secondary"
+            active == "about"
+              ? "active text-main-yellow hover:bg-white lg:bg-transparent lg:text-secondary bg-secondary"
               : ""
           } lg:hover:text-secondary lg:hover:bg-transparent lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
         >
@@ -73,8 +73,8 @@ const NavBar = () => {
         <a
           href="/gallery"
           className={`lg:px-0 px-4 lg:hover:bg-none ${
-            active === "gallery"
-              ? "active hover:text-main-yellow hover:bg-white lg:bg-transparent lg:text-secondary bg-secondary"
+            active == "gallery"
+              ? "active text-main-yellow hover:bg-white lg:bg-transparent lg:text-secondary bg-secondary"
               : ""
           } lg:hover:text-secondary lg:hover:bg-transparent hover:bg-secondary lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
         >
@@ -83,8 +83,8 @@ const NavBar = () => {
         <a
           href="/publication"
           className={`lg:px-0 px-4 lg:hover:bg-none ${
-            active === "publication"
-              ? "active hover:text-main-yellow hover:bg-white lg:bg-transparent lg:text-secondary bg-secondary"
+            active == "publication"
+              ? "active text-main-yellow hover:bg-white lg:bg-transparent lg:text-secondary bg-secondary"
               : ""
           } lg:hover:text-secondary lg:hover:bg-transparent hover:bg-secondary lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
         >
@@ -93,14 +93,14 @@ const NavBar = () => {
         <a
           href="/feedback"
           className={`lg:px-0 px-4 lg:hover:bg-none ${
-            active === "feedback" ? "" : ""
+            active == "feedback" ? "" : ""
           } lg:hover:text-secondary lg:hover:bg-transparent hover:bg-secondary lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
         >
           Feedbacks
         </a>
         {/* <a
           href="/payment"
-          className={`lg:px-0 px-4 lg:hover:bg-none ${active === 'about' ? '' : ''} lg:hover:text-secondary lg:hover:bg-transparent hover:bg-secondary lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
+          className={`lg:px-0 px-4 lg:hover:bg-none ${active == 'about' ? '' : ''} lg:hover:text-secondary lg:hover:bg-transparent hover:bg-secondary lg:py-2 lg:text-left text-right py-4  pr-[40px]`}
           
         >
           

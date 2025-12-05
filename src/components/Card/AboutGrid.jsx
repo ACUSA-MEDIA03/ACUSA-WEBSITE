@@ -1,18 +1,27 @@
-import BannerImg from "/Banner/banner.jpg";
-
 function AboutGrid() {
   return (
-  <div className="grid grid-rows-2 gap-6 p-4 max-w-6xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 ">
-    <div className="bg-main text-white flex-end lg:ml-64 ml-64 w-24 p-6 rounded-xl flex items-center " >
-      {/* <img  src={BannerImg} className="w-full aspect-auto "/> */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start justify-start  gap-5 py-6">
+      {/* First */}
+      <div className="flex flex-col lg:justify-start justify-end gap-6 lg:h-[80lvh] h-[70lvh]">
+        <div className="border border-white basis-[25%] rounded-[10px] w-[45%] bg-[#505786]"></div>
+        <div className="border border-white basis-[50%] rounded-[10px] bg-[#0C1657] "></div>
+      </div>
+      {/* First */}
+
+      {/* Second */}
+      <div className="bg-[#0C1657] rounded-[10px] lg:h-[80lvh] h-[70lvh] "></div>
+      {/* Second */}
+
+      {/* Third */}
+      <div className="flex flex-col gap-6 lg:h-[80lvh] h-[70lvh]">
+        <div className="border border-white basis-[50%] rounded-[10px] bg-[#D49906] text-white flex items-center px-4">
+          <p className="font-sora text-[23px]">{`"ACUSA is a student led organization that is committed to promoting the interests of students in this university."`}</p>
+        </div>
+        <div className="border border-white basis-[25%] rounded-[10px] w-[45%] bg-[#505786]"></div>
+      </div>
+      {/* Third */}
+
     </div>
-    <div className="bg-main/50 text-white p-6 rounded-2xl w-92 flex items-center justify-center row-span-2">Items 2</div>
-    <div className="bg-main-yellow p-6 rounded-xl flex items-center justify-center" ><p className="font-grotesk text-white">
-      {`ACUSA is a student led organization that is committed to promoting the interests of students in this university. `}
-      </p></div>
-    <div className="bg-main text-white p-6 rounded-xl flex items-center justify-center" >Item 4</div>
-    <div className="bg-main text-white w-24 p-6 rounded-xl flex items-center justify-center" >Item 5</div>
-  </div>
-  )
+  );
 }
 export default AboutGrid;
