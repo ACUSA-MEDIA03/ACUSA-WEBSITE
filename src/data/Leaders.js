@@ -74,8 +74,8 @@ const Leaders = [
   {
     name: "ACUSA CEC",
     position: "Treasurer",
-    tag: "Legislative",
-    image: "/Executives/President.jpg",
+    tag: "Executive",
+    image: "/Executives/treasurer.jpg",
   },
   {
     name: "ACUSA CEC",
