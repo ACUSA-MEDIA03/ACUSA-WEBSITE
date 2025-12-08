@@ -21,7 +21,6 @@ const AboutPage = () => {
     <div className="">
       {/* navbar */}
       <NavBar className="fixed pb-2" />
-      {/* navbar */}
       {/* HERO SECTION */}
       <div className="h-[50vh] grid bg-no-repeat bg-cover bg-center "
         style={{ backgroundImage: `url(${Banner})` }}>
@@ -43,7 +42,6 @@ const AboutPage = () => {
         {/* learn about acusa text1 */}
 
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
-
           {/* Image Grid */}
           <div className="grid grid-cols-4 grid-rows-2 gap-[10px] lg:gap-[20px] w-full  ">
             {/* <div className="col-span-2"> */}
@@ -70,8 +68,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* Leaarn about Acusa  */}
-
+  
       {/* Mission, Vision, and Logo Section */}
       <div className=" px-[15px] py-[15px] lg:px-[20px] lg:py-[90px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  bg-gray-100">
         {/* Logo */}
@@ -82,7 +79,6 @@ const AboutPage = () => {
             className="w-64 h-64 object-contain"
           />
         </div>
-
         {/* Mission And VIsion */}
         {MissVision.map((detail) => (
           <MissVisionCard
@@ -91,17 +87,18 @@ const AboutPage = () => {
             description={detail.description}
           />
         ))}
-        {/* Mission And VIsion */}
       </div>
 
       <section className="flex flex-col md:flex-row items-center lg:gap-8 gap-4 lg:relative text-white">
         {/* Text Content */}
-        <div className=" bg-main py-[25px] lg:py-[40px] lg:w-[80vw] lg:h-[65vh] h-[52vh]">
-          <p className="text-lg font-medium font-grotesk text-[16px] lg:text-[32px] lg:px-[40px] px-[15px] lg:text-start lg:w-[63vw] text-center">
-            As a group founded on service, leadership,  and accountability,  <span className="font-bold">ACUSA</span> supports programs and policies that advance student growth, create a welcoming campus  environment, and facilitate productive  communication between students and school administrators.
+        <div className=" bg-main py-30 my-8 lg:py-[40px] lg:w-[80vw] lg:h-[65vh] h-[56vh]">
+          <p className="text-lg font-medium font-grotesk text-[14px] lg:text-[28px] lg:px-[40px] px-[15px] lg:text-start lg:w-[63vw] text-center">
+            As a group founded on service, leadership,  and accountability,  <span className="font-bold">ACUSA </span>
+             supports programs and policies that advance student growth, create a welcoming campus  environment, and facilitate productive  
+             communication between students and school administrators.
           </p>
           <br />
-          <p className="font-grotesk font-light text-center lg:text-start text-[12px] lg:text-[26px] px-[15px] lg:px-[40px] lg:w-[62vw]">
+          <p className="font-grotesk font-light text-center lg:text-start text-[12px] lg:text-[24px] px-[15px] lg:px-[40px] lg:w-[62vw]">
             ACUSA makes sure that the needs of the student  body as a whole are satisfied through representation,  engagement, and calculated action.
           </p>
         </div>
@@ -156,7 +153,7 @@ const AboutPage = () => {
 
 
       {/* About Acusa media */}
-      <div className=" flex flex-col items-center justify-start">
+      <div className=" flex flex-col items-center justify-start my-4">
         <div className="flex flex-col items-center justify-center text-center p-[15px] lg:p-[40px]">
           <h1 className="font-rubik text-[16px] lg:text-[36px] font-bold ">About ACUSA Media</h1>
           <p className="text-[12px] lg:text-[24px] font-grotesk">ACUSA Media is the official media body for the Ajayi Crowther University Student’s Assembly. It has the responsibility of providing full media activities for ACUSA. ACUSA Media is responsible for supporting ACUSA with its core responsibility; giving voice to the students and being an ear to the management.
@@ -180,9 +177,6 @@ const AboutPage = () => {
             )}
         </div>
       </div>
-
-      {/* About Acusa media */}
-      {/* </div> */}
 
       <Footer />
     </div>
