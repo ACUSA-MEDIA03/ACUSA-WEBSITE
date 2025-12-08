@@ -1,5 +1,5 @@
 import { FaSnapchatGhost } from 'react-icons/fa';
-import { FaInstagram, FaLinkedin, FaSnapchat, FaSpotify, FaTwitter, FaWhatsapp } from 'react-icons/fa6';
+import { FaInstagram, FaLinkedin, FaSnapchat, FaSpotify, FaTwitter, FaWhatsapp, FaTiktok, FaX } from 'react-icons/fa6';
 import { PiSnapchatLogoDuotone } from 'react-icons/pi';
 
 const Footer = () => {
@@ -12,13 +12,27 @@ const Footer = () => {
           <p className='lg:text-[16px] text-[13px]'>Stay updated on our activities, events, and opportunities to get involved by following us on social media or contacting us directly.</p>
           <ul className="font-grotesk space-y-3">
             <li className='flex items-center gap-2'>
-              <a className='border lg:border-[gray] hover:border-[#25d366] hover:bg-[#25d366]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' target="_blank" href="https://wa.link/wuqsov"> <FaWhatsapp /> </a>
-              <a className='border lg:border-[gray] hover:border-[#1da1f2] hover:bg-[#1da1f2]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' target="_blank" href="https://twitter.com/acu_lss?s=09"> <FaTwitter /> </a>
-              <a className='border lg:border-[gray] hover:border-[#c32aa3] hover:bg-[#c32aa3]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' target="_blank" href="https://www.instagram.com/acu_lss?igsh=MXdoN2VsdmNtdzIycw=="> <FaInstagram /> </a>
-              <a className='border lg:border-[gray] hover:border-[#fffb00bb] hover:bg-[#fffb00bb]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' target="_blank" href="https://snapchat.com/t/pPEuaRdE"> <PiSnapchatLogoDuotone /> </a>
-              <a className='border lg:border-[gray] hover:border-[#0a66c2] hover:bg-[#0a66c2]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' target="_blank" href="https://www.linkedin.com/company/law-students-society-ajayi-crowther-university/"><FaLinkedin/></a>
-              <a className='border lg:border-[gray] hover:border-[#1ed760] hover:bg-[#1ed760]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' target="_blank" href="https://open.spotify.com/episode/0J5FJYFmkcHM6CNn77br2G?si=nQeK9hqcTbygwXzNIJpwIQ"> <FaSpotify/> </a>
-              {/* <a className='border lg:border-[gray] hover:border-[#1ed760] hover:bg-[#1ed760]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' target="_blank" href="https://open.spotify.com/episode/0J5FJYFmkcHM6CNn77br2G?si=nQeK9hqcTbygwXzNIJpwIQ"> <PiSnapchatLogoDuotone/> </a> */}
+             <a className='border lg:border-[gray] hover:border-[#000000] hover:bg-[#000000]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' 
+              target="_blank" href="https://www.tiktok.com/@acusamedia?_t=8j75ANdvYVq&_r=1"> 
+              <FaTiktok /> </a>
+              <a className='border lg:border-[gray] hover:border-[#25d366] hover:bg-[#25d366]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' 
+              target="_blank" href="https://wa.me/+2347025735703?text=Hello!%20ACUSA%20MEDIA%20,%20I%20have%20saved%20your%20contact%20my%20name%20is%20_"> 
+              <FaWhatsapp /> </a>
+              <a className='border lg:border-[gray] hover:border-[#1da1f2] hover:bg-[#1da1f2]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]'
+               target="_blank" href=""> 
+               <FaX /> </a>
+              <a className='border lg:border-[gray] hover:border-[#c32aa3] hover:bg-[#c32aa3]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' 
+              target="_blank" href="https://www.instagram.com/acusamedia?igsh=MWRqdnU1azBrN21sag%3D%3D&utm_source=qr "> 
+              <FaInstagram /> </a>
+              <a className='border lg:border-[gray] hover:border-[#fffb00bb] hover:bg-[#fffb00bb]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' 
+              target="_blank" href="https://">
+                <PiSnapchatLogoDuotone /> </a>
+              <a className='border lg:border-[gray] hover:border-[#0a66c2] hover:bg-[#0a66c2]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]' 
+              target="_blank" href="">
+                <FaLinkedin/></a>
+              <a className='border lg:border-[gray] hover:border-[#1ed760] hover:bg-[#1ed760]  transition-all ease-in-out w-6 h-6 rounded-full grid place-content-center p-[20px]'
+               target="_blank" href="https://open.spotify.com/episode/0J5FJYFmkcHM6CNn77br2G?si=nQeK9hqcTbygwXzNIJpwIQ">
+                 <FaSpotify/> </a>
             </li>
           </ul>
         </div>
@@ -28,7 +42,7 @@ const Footer = () => {
         <hr className="glass w-[100%]" />
 
         <div className="relative font-grotesk text-white p-[20px]">
-          <p className="font-light">Copyright &copy; ACUSA MEDIA. All Rights Reserved</p>
+          <p className="font-light">Copyright &copy; {new Date().getFullYear()} ACUSA MEDIA. All Rights Reserved</p>
         </div>
       </div>
 
