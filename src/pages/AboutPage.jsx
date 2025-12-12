@@ -215,7 +215,7 @@ const AboutPage = () => {
             </h1>
             <p className="text-lg lg:text-2xl leading-relaxed max-w-3xl">
               Learn all there is to learn about the Ajayi Crowther University
-              Students' Assembly
+              Students&apos; Assembly
             </p>
           </div>
         </div>
@@ -272,7 +272,7 @@ const AboutPage = () => {
             <p className="text-base lg:text-xl text-gray-700 leading-relaxed">
               As the liaison between the student body and the university
               administration, ACUSA, which is made up of chosen student
-              officials, makes sure that students' opinions are heard, their
+              officials, makes sure that students&apos; opinions are heard, their
               issues are taken care of, and their social and academic
               experiences are enhanced.
             </p>
@@ -397,7 +397,7 @@ const AboutPage = () => {
           </h2>
           <p className="text-base lg:text-xl text-gray-700 leading-relaxed">
             ACUSA Media is the official media body for the Ajayi Crowther
-            University Student's Assembly. It has the responsibility of
+            University Student&apos;s Assembly. It has the responsibility of
             providing full media activities for ACUSA. ACUSA Media is
             responsible for supporting ACUSA with its core responsibility; giving
             voice to the students and being an ear to the management. The ACUSA
