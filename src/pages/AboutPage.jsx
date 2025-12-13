@@ -122,7 +122,7 @@
 //               <button
 //                 key={type}
 //                 onClick={() => setCategory(type)}
-//                 className={`text-center lg:text-[18px] text-[10px] cursor-pointer  font-grotesk 
+//                 className={`text-center lg:text-[18px] text-[10px] cursor-pointer  font-grotesk
 //                     ${category === type ? "bg-main text-white" : "text-black"}
 //                     hover:bg-main transition-all bg-[#C4C4C4] px-3 lg:px-6 py-2 rounded-[6px] text-center`}
 //               >
@@ -183,6 +183,7 @@
 // };
 
 // export default AboutPage;
+
 import { useState } from "react";
 import Logo from "/Logo/logo.png";
 import NavBar from "../components/NavBar/NavBar";
@@ -208,9 +209,9 @@ const AboutPage = () => {
         className="h-[50vh] bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: `url(${Banner})` }}
       >
-        <div className="flex justify-center flex-col px-5 lg:px-20 py-32 text-white h-full bg-black/40">
-          <div className="max-w-4xl space-y-4 lg:space-y-6">
-            <h1 className="font-bold text-4xl lg:text-6xl leading-tight">
+        <div className="flex justify-center flex-col px-5 lg:px-20 py-32 text-white h-full bg-black/40 ">
+          <div className="max-w-4xl space-y-4 lg:space-y-6 pt-12">
+            <h1 className="font-bold text-4xl lg:text-6xl leading-tight ">
               About Us
             </h1>
             <p className="text-lg lg:text-2xl leading-relaxed max-w-3xl">
@@ -225,10 +226,10 @@ const AboutPage = () => {
       <section className="px-5 lg:px-20 py-12 lg:py-20">
         {/* Section Header */}
         <div className="mb-12 lg:mb-16">
-          <p className="text-sm lg:text-base text-gray-600 mb-2">
+          <p className="text-[8px] lg:text-[24px] font-semibold text-gray-600 mb-2">
             Learn about ACUSA
           </p>
-          <h2 className="text-2xl lg:text-4xl font-bold leading-tight max-w-4xl">
+          <h2 className="text-2xl lg:text-4xl font-bold leading-tight max-w-4xl font-rubik ">
             There is more to the Ajayi Crowther University Students Assembly
             than just simply paying the ACUSA fee.
           </h2>
@@ -242,22 +243,22 @@ const AboutPage = () => {
               <img
                 src="/About/Frame 270.png"
                 alt="Students in a lecture hall"
-                className="col-span-3 rounded-lg object-cover w-full h-full"
+                className="col-span-3 object-cover w-full h-full"
               />
               <img
                 src="/About/Frame 272.png"
                 alt="Students in a lecture hall"
-                className="rounded-lg object-cover w-full h-full"
+                className="object-cover w-full h-full"
               />
               <img
                 src="/About/Frame 273.png"
                 alt="Students in a lecture hall"
-                className="col-span-1 rounded-lg object-cover w-full h-full"
+                className="col-span-1  object-cover w-full h-full"
               />
               <img
                 src="/About/Frame 271.png"
                 alt="Students in discussion"
-                className="col-span-3 rounded-lg object-cover w-full h-full"
+                className="col-span-3  object-cover w-full h-full"
               />
             </div>
           </div>
