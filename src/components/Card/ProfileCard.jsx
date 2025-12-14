@@ -19,6 +19,7 @@ function ProfileCard(e) {
           <div className="border flex items-center flex-col border-white w-full  py-[15px] px-[16px] glassmorphism_white rounded-bl-[13px] rounded-tr-[13px] bottom-0 ">
             <b className="font-rubik text-main text-[20px]">{e.name}</b>
             <p className="font-grotesk text-[yellow] text-[15px]">{e.position}</p>
+            <p>{ e.level}</p>
           </div>
         </div>
       </div>
@@ -26,26 +27,26 @@ function ProfileCard(e) {
       {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
-        onClick={closeModal}>
+          onClick={closeModal}>
           <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
-          onClick={(e) => e.stopPropagation()}>
+            onClick={(e) => e.stopPropagation()}>
             {/* Close Button */}
             <button onClick={closeModal}
-            className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors ">
+              className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors ">
               <X className="h-5 w-5 text-gray-600" />
             </button>
 
             {/* Modal Content */}
-            <div className="flex flex-col "> 
-               <div className="relative h-80 bg-cover bg-center bg-no-repeat">
+            <div className="flex flex-col ">
+              <div className="relative h-80 bg-cover bg-center bg-no-repeat">
                 <img
                   src={e.image}
                   alt={e.name}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                  <h2 className="text-white text-3xl font-bold">{e.name}</h2>
-                  <p className="text-red-400 text-xl font-medium">{e.position}</p>
+                  <h2 className="text-main text-3xl font-bold">{e.name}</h2>
+                  <p className="text-[yellow] text-xl font-medium">{e.position}</p>
                   {e.tag && (
                     <span className="inline-block mt-2 px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm rounded-full">
                       {e.tag}
@@ -53,8 +54,8 @@ function ProfileCard(e) {
                   )}
                 </div>
               </div>
-                  
-              
+
+
               {/* Details Section */}
               <div className="p-6 space-y-6">
                 {/* Bio */}
@@ -66,7 +67,7 @@ function ProfileCard(e) {
                     <p className="text-gray-700 leading-relaxed">
                       {e.bio}
                     </p>
-                    </div>
+                  </div>
                 )}
               </div>
 
@@ -86,7 +87,7 @@ function ProfileCard(e) {
                       </a>
                     )}
                     {e.phone && (
-                       <a href={`tel:${e.phone}`}
+                      <a href={`tel:${e.phone}`}
                         className="flex items-center gap-3 text-gray-700 hover:text-emerald-600 transition-colors"
                       >
                         <Phone className="h-5 w-5" />
@@ -94,7 +95,7 @@ function ProfileCard(e) {
                       </a>
                     )}
                   </div>
-                  </div>
+                </div>
               )}
 
               {/* Social Media Links */}
@@ -106,7 +107,7 @@ function ProfileCard(e) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
-                      <Facebook  className="h-5 w-5"/>
+                      <Facebook className="h-5 w-5" />
                     </a>
                   )}
 
@@ -118,14 +119,14 @@ function ProfileCard(e) {
                       className="bg-black p-3 text-white hover:bg-black/5">
                     </a>
                   )}
-                  
+
                   {e.instagram && (
                     <a
                       href={e.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
-                    className="p-3 bg-pink-600 text-white rounded-full hover:bg-pink-700">
-                      <Instagram  className="w-5 h-5"/>
+                      className="p-3 bg-pink-600 text-white rounded-full hover:bg-pink-700">
+                      <Instagram className="w-5 h-5" />
                     </a>
                   )}
                   (e.linkedin && (
@@ -133,10 +134,10 @@ function ProfileCard(e) {
                     target="_blank"
                     rel="noopener noreffer"
                     className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 ">
-                    <Linkedin  className="w-5 h-5"/>
+                    <Linkedin className="w-5 h-5" />
                   </a>
                   ))
-                  </div>
+                </div>
               )}
 
               {/* Department && Faculty */}
@@ -146,25 +147,25 @@ function ProfileCard(e) {
                   <div className="space-y-2">
                     {e.faculty && (
                       <p>
-                        <span className="font-medium">Faculty: { e.faculty}</span>
+                        <span className="font-medium">Faculty: {e.faculty}</span>
                       </p>
                     )}
                     {e.department && (
                       <p>
-                        <span className="font-semibold">Department: { e.department}</span>
+                        <span className="font-semibold">Department: {e.department}</span>
                       </p>
                     )}
-                     {e.level && (
-                        <p>
-                          <span className="font-medium">Level:</span> {e.level}
-                        </p>
-                      )}
+                    {e.level && (
+                      <p>
+                        <span className="font-medium">Level:</span> {e.level}
+                      </p>
+                    )}
                   </div>
                 </div>
               )}
-              </div>
-
             </div>
+
+          </div>
         </div>
       )}
     </>
