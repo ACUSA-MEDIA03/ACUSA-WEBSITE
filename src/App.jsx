@@ -18,6 +18,8 @@ function App() {
           <Route path="/gallery" element={<GalleryPage/>} />
           <Route path="/publication" element={<PublicationPage/>} />
           <Route path="/publication/:title/:id" element={<DetailPage />} />
+
+          {/* Notfound */}
           <Route path="*" element={ <NotFound />} />
         </Routes>
       </Router>
