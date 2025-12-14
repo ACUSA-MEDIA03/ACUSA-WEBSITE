@@ -186,7 +186,7 @@ const AboutPage = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
           {filteredLeaders.length <= 0 ? (
             <div className="col-span-full text-center py-12">
-              <p className="text-red-500 text-lg lg:text-xl font-medium">
+              <p className="text-main text-lg lg:text-xl font-medium">
                 No {category}s available.
               </p>
             </div>
@@ -197,6 +197,15 @@ const AboutPage = () => {
                 name={leader.name}
                 position={leader.position}
                 image={leader.image}
+                level={leader.level}
+                tag={leader.tag}
+                email={leader.email}
+                phone={leader.phone}
+                facebook={leader.facebook}
+                x={leader.x}
+                linkedln={leader.linkedin}
+                faculty={leader.faculty}
+                department={leader.department}
               />
             ))
           )}
@@ -237,13 +246,20 @@ const AboutPage = () => {
                 name={team.name}
                 position={team.position}
                 image={team.image}
+                email={team.email}
+                phone={team.phone}
+                x={team.x}
+                linkedin={team.linkedin}
+                department={team.department}
+                level={team.level}
+                faculty={team.faculty}  
+                facebook={team.facebook}
               />
             ))
           )}
         </div>
-      </section>
-
-      <Footer />
+      </section>      
+    <Footer />
     </div>
   );
 };
