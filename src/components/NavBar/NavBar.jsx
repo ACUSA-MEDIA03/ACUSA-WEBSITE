@@ -32,7 +32,7 @@ const NavBar = () => {
   const removeNav = () => {
     navBar.current.style.display = "none";
   };
-  console.log(active)
+  // console.log(active)
   return (
     <div
       className={`fixed flex lg:items-center lg:justify-between lg:px-16 lg:py-[20px] p-[20px] z-10 w-full ${active === "" ? 'text-[#fff]' : ''}`}
