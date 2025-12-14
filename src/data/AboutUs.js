@@ -3,9 +3,9 @@ const MissVision = [
     id: 1,
     header: "Our Mission",
     description: `ACUSA aims to foster leadership, accountability, and service
-                while creating an inclusive campus culture. We advocate for
+                while creating an inclusive campus culture, advocating for
                 student growth, enhance communication with the administration,
-                and ensure the needs of students are met through engagement and
+                ensuring  students needs are met through engagement and
                 representation.`,
   },
   {
