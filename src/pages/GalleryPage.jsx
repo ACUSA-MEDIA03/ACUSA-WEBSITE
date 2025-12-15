@@ -6,10 +6,9 @@ const GallerytPage = () => {
   return (
     <>
       <NavBar />
-
       <div className="border border-purple-950 grid relative">
         {/* First Row */}
-        <div className="grid grid-cols-2 gap-[13px] w-full h-[60vh] ">
+        <div className="grid grid-cols-2 gap-3.25 w-full h-[60vh] ">
           <div
             className=" topleft bg-no-repeat bg-cover flex items-center"
             style={{ backgroundImage: `url(/Gallery/1.JPG)` }}
@@ -22,7 +21,7 @@ const GallerytPage = () => {
 
         {/* Middle Section */}
         <div
-          className="middle bg-no-repeat bg-cover left-0 bg-[50%_40%] h-[60vh] relative "
+          className="middle bg-no-repeat bg-cover left-0 bg-position-[50%_40%] h-[60vh] relative "
           style={{ backgroundImage: `url(/Gallery/all.JPG)` }}
         >
           <div className="absolute top-0 left-0 w-full h-full bg-[#0c16578a]">
@@ -31,7 +30,7 @@ const GallerytPage = () => {
         {/* Middle Section */}
 
         {/* Last Row */}
-        <div className="grid grid-cols-2 gap-[13px] relative w-full h-[60vh] ">
+        <div className="grid grid-cols-2 gap-3.25 relative w-full h-[60vh] ">
           <div
             className=" bottomleft bg-no-repeat bg-cover flex items-center"
             style={{ backgroundImage: `url(/Gallery/3.JPG)` }}
