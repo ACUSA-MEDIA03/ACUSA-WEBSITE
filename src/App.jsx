@@ -11,7 +11,6 @@ import NotFound from "./pages/Notfound";
 function App() {
   return (
     <>
-    
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/about" element={<AboutPage />}/>
@@ -22,7 +21,6 @@ function App() {
           {/* Notfound */}
           <Route path="*" element={ <NotFound />} />
         </Routes>
-      
     </>
   )
 }
